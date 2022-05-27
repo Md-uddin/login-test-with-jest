@@ -9,8 +9,8 @@ const Login = () => {
   const [user, setUser] = useState({});
 
   const handleClick = async (e) => {
-    e.preventDefault();
     setLoading(true);
+    e.preventDefault();
     try {
       const { data } = await axios.get(
         "https://jsonplaceholder.typicode.com/users/1"
